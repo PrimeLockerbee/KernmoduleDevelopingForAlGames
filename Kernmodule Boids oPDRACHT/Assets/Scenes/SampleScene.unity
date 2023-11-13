@@ -169,9 +169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boidPrefabs:
-  - {fileID: 6581503909936609084, guid: 0fea40a93b32f754ab591d7c96b1639d, type: 3}
-  - {fileID: 5962469400452498345, guid: dad79030a64afb2439dc84d0404ca19f, type: 3}
-  - {fileID: 3569360765686019054, guid: dce92e65f3351944ebd553cf1681e56a, type: 3}
+  - {fileID: 5597133753493721976, guid: a7c980aacd8a8fd4183f0ba08bd9c25e, type: 3}
+  - {fileID: 1147087724850169415, guid: ed6a89b2c1440cb4db8825bb1b932d55, type: 3}
+  - {fileID: 3245415572117882644, guid: 224a97416940a7342836c2d79b8df17a, type: 3}
   spawnBoids: 50
   boidSpeed: 25
   boidSteeringSpeed: 100
@@ -188,7 +188,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 377400e63c0bf4b4fad49203c573f915, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 343af197ba38a5541acb8390e8335f6c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
