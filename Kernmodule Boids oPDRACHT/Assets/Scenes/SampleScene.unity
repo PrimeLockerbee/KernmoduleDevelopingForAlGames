@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 119ec07f1c7ed204db46bd8465fd5a50, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 16bc8a9d5451ca44d8f70575adbece3a, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -148,13 +148,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505814072}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &505814074
 MonoBehaviour:
@@ -168,11 +168,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a68e06dcb183e49875c157a70b6dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boidPrefab: {fileID: 6581503909936609084, guid: 0fea40a93b32f754ab591d7c96b1639d, type: 3}
-  boidPrefab2: {fileID: 5962469400452498345, guid: dad79030a64afb2439dc84d0404ca19f, type: 3}
-  boidPrefab3: {fileID: 3569360765686019054, guid: dce92e65f3351944ebd553cf1681e56a, type: 3}
+  boidPrefabs:
+  - {fileID: 6581503909936609084, guid: 0fea40a93b32f754ab591d7c96b1639d, type: 3}
+  - {fileID: 5962469400452498345, guid: dad79030a64afb2439dc84d0404ca19f, type: 3}
+  - {fileID: 3569360765686019054, guid: dce92e65f3351944ebd553cf1681e56a, type: 3}
   spawnBoids: 50
-  boidSpeed: 500
+  boidSpeed: 25
   boidSteeringSpeed: 100
   boidNoClumpingArea: 10
   boidLocalArea: 10
@@ -359,19 +360,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &2062349819
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1292639079292216932, guid: 6ef0b619b58452d488496147bf23ae6d, type: 3}
@@ -396,15 +398,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1292639079292459419, guid: 6ef0b619b58452d488496147bf23ae6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -50.8
+      value: -116.5
       objectReference: {fileID: 0}
     - target: {fileID: 1292639079292459419, guid: 6ef0b619b58452d488496147bf23ae6d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.4
+      value: 40.8
       objectReference: {fileID: 0}
     - target: {fileID: 1292639079292459419, guid: 6ef0b619b58452d488496147bf23ae6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -53.1
+      value: -78.1
       objectReference: {fileID: 0}
     - target: {fileID: 1292639079292459419, guid: 6ef0b619b58452d488496147bf23ae6d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -439,4 +441,14 @@ PrefabInstance:
       value: Main Camera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ef0b619b58452d488496147bf23ae6d, type: 3}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 705507995}
+  - {fileID: 505814073}
+  - {fileID: 2062349819}
